@@ -1,13 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Comments are through out the page -->
+<!doctype html>
+<html lang="en"> <!-- added lang attribute here -->
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML 5 Boilerplate</title>
-
   </head>
   <body>
-<iframe width="687" height="386" src="https://www.youtube.com/embed/FQdaUv95mR8" title="HTML Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- header with nav elements -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Main elment containing section and article -->
+<main>
+  <section>
+    <h2>Section Title</h2>
+    <p>This is a section of the page.</p>
+  </section>
+
+  <article>
+    <h2>Article Title</h2>
+    <p>This is an article inside the main content area.</p>
+  </article>
+</main>
+<!-- h1 through h6 then paragragh with strong, em, and br. This all gives different sizes to font and then bold, italics, and a line break -->
+    <h1 id="main-heading">This is an h1</h1> <!-- added id here -->
+    <h2 style="color: blue;">This will be an h2</h2> <!-- added inline style here -->
+    <h3>This will be an h3</h3>
+    <h4>This will be an h4</h4>
+    <h5>This will be an h5</h5>
+    <h6>This will be an h6</h6>
+    <p class="intro-text">This is a paragraph in the <strong>HTML</strong> 5 <em>Boilerplate</em> <br>template.</p> <!-- added class here -->
+<!-- embeded code for youtube video from lesson -->
+    <iframe
+      width="687"
+      height="386"
+      src="https://www.youtube.com/embed/FQdaUv95mR8"
+      title="HTML Tutorial for Beginners"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- added anchor tag here with link to portfolio and a img tag with link to random open soucre photo online -->
+    <a href="https://jason-brooks-portfolio.vercel.app/" target="_blank">Check out my portfolio!</a>
+    <img src="https://media.istockphoto.com/id/1039072216/photo/open-source-pc-board.webp?a=1&b=1&s=612x612&w=0&k=20&c=aiaTorNbs6G29RIaYgjNIpcKlL5INLymJxf69kqvli8=" alt="Random open source photo" title="This is a computer board image" /> <!-- added title here -->
+    <!-- added unordered and ordered lists -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+<!-- added table here -->
+  <table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Favorite Color</th>
+  </tr>
+  <tr>
+    <td>Jason</td>
+    <td>34</td>
+    <td>Blue</td>
+  </tr>
+  <tr>
+    <td>Sarah</td>
+    <td>29</td>
+    <td>Green</td>
+  </tr>
+</table>
+<!-- added form here with labels, inputs, and divs(block elements)-->
+ <form action="#" method="post">
+  <div>
+    <label for="username">Your Name:</label>
+    <input type="text" id="username" name="username">
+  </div>
+
+  <div>
+    <label for="email">Your Email:</label>
+    <input type="text" id="email" name="email">
+  </div>
+
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+</form>
+<!-- added audio and video controls here -->
+<audio controls>
+  <source src="audio-file.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<video width="400" controls>
+  <source src="video-file.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<!-- added footer here -->
+<footer>
+  <!-- added special character for copyright symbol -->
+  <p>&copy; 2026 Jason Brooks</p>
+</footer>
   </body>
 </html>
