@@ -1,123 +1,120 @@
-<!-- Comments are through out the page -->
-<!doctype html>
-<html lang="en"> <!-- added lang attribute here -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="index.css" /> <!-- added link to css file here -->
-    <title>HTML 5 Boilerplate</title>
-  </head>
-  <body>
-    <!-- header with nav elements -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Main elment containing section and article -->
-<main>
-  <section>
-    <h2>Section Title</h2>
-    <p>This is a section of the page.</p>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dashboard</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <h1 id="main-title">Learning Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#goals">Study Goals</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <article>
-    <h2>Article Title</h2>
-    <p>This is an article inside the main content area.</p>
-  </article>
-</main>
-<!-- h1 through h6 then paragragh with strong, em, and br. This all gives different sizes to font and then bold, italics, and a line break -->
-    <h1 id="main-heading">This is an h1</h1> <!-- added id here -->
-    <h2 style="color: blue;">This will be an h2</h2> <!-- added inline style here -->
-    <h3>This will be an h3</h3>
-    <h4>This will be an h4</h4>
-    <h5>This will be an h5</h5>
-    <h6>This will be an h6</h6>
-    <p class="intro-text">This is a paragraph in the <strong>HTML</strong> 5 <em>Boilerplate</em> <br>template.</p> <!-- added class here -->
-<!-- embeded code for youtube video from lesson -->
-    <iframe
-      width="687"
-      height="386"
-      src="https://www.youtube.com/embed/FQdaUv95mR8"
-      title="HTML Tutorial for Beginners"
-      frameborder="0"
-      allow="
-        accelerometer;
-        autoplay;
-        clipboard-write;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture;
-        web-share;
-      "
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-    <!-- added anchor tag here with link to portfolio and a img tag with link to random open soucre photo online -->
-    <a href="https://jason-brooks-portfolio.vercel.app/" target="_blank">Check out my portfolio!</a>
-    <img src="https://media.istockphoto.com/id/1039072216/photo/open-source-pc-board.webp?a=1&b=1&s=612x612&w=0&k=20&c=aiaTorNbs6G29RIaYgjNIpcKlL5INLymJxf69kqvli8=" alt="Random open source photo" title="This is a computer board image" /> <!-- added title here -->
-    <!-- added unordered and ordered lists -->
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <ol>
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-    </ol>
-<!-- added table here -->
-  <table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Favorite Color</th>
-  </tr>
-  <tr>
-    <td>Jason</td>
-    <td>34</td>
-    <td>Blue</td>
-  </tr>
-  <tr>
-    <td>Sarah</td>
-    <td>29</td>
-    <td>Green</td>
-  </tr>
-</table>
-<!-- added form here with labels, inputs, and divs(block elements)-->
- <form action="#" method="post">
-  <div>
-    <label for="username">Your Name:</label>
-    <input type="text" id="username" name="username">
-  </div>
+  <!-- Main Content -->
+   <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About This Dashboard</h2>
+      <p class="intro-text">
+        Welcome to your personal <strong>Learning Dashboard</strong>.
+        This page helps you track goals, explore resources, and practice basic web development skills.
+      </p>
+    </section>
 
-  <div>
-    <label for="email">Your Email:</label>
-    <input type="text" id="email" name="email">
-  </div>
+    <!-- Resources Section -->
+    <section id="resources">
+      <h2>Learning Resources</h2>
+      <!-- Unordered List -->
+      <ul>
+        <li>HTML Basics</li>
+        <li>CSS Fundamentals</li>
+        <li>JavaScript Essentials</li>
+      </ul>
 
-  <div>
-    <input type="submit" value="Submit">
-  </div>
-</form>
-<!-- added audio and video controls here -->
-<audio controls>
-  <source src="audio-file.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<video width="400" controls>
-  <source src="video-file.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<!-- added footer here -->
-<footer>
-  <!-- added special character for copyright symbol -->
-  <p>&copy; 2026 Jason Brooks</p>
-</footer>
-  </body>
+      <!-- Ordered List -->
+      <ol>
+        <li>Set up your development environment</li>
+        <li>Start with HTML</li>
+        <li>Move to CSS</li>
+        <li>Practice JavaScript</li>
+      </ol>
+
+      <!-- Table Example -->
+       <table border="1" title="Study Topics Table"> 
+        <tr>
+          <th>Topic</th>
+          <th>Difficulty</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Easy</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Medium</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Challenging</td>
+          <td>12</td>
+        </tr>
+       </table>
+    </section>
+
+    <!-- Study Goals Section (JS Feature) -->
+    <section id="goals">
+      <h2>Study Goals</h2>
+
+      <!-- Form for adding goals -->
+      <form id="goal-form">
+        <label for="goal-input">Add a new goal:</label>
+        <input type="text" id="goal-input" name="goal-input" placeholder="Enter a goal">
+        <input type="submit" value="Add Goal">
+      </form>
+
+      <!-- Where JS will insert goals -->
+      <ul id="goal-list"></ul>
+
+      <!-- JS will update this -->
+       <p>Total Goals: <span id="goal-count">0</span></p>
+    </section>
+
+    <!-- Media Section -->
+     <section id="media">
+      <h2>Learning Media</h2>
+
+      <!-- Audio -->
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio.
+      </audio>
+
+      <!-- Video -->
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/FQdaUv95mR8" title="HTML Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+     </section>
+
+   </main>
+
+   <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Learning Dashboard &nbsp; | &nbsp; Built with HTML &amp; CSS &amp; JS</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+     <script src="script.js"></script>
+</body>
 </html>
